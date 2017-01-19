@@ -1,0 +1,26 @@
+{
+    "name": "mlHttp",
+    "displayName": "mlHttp",
+    "description": "mlHttp methods",
+    "version": "0.1.0",
+    "publisher": "SeanTru",
+    "icon": "images/icon.png",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript.json"
+            }
+        ]
+    },
+    "keywords": [
+        "mlHttp",
+        "methods"
+    ]
+}

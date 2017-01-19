@@ -1,0 +1,51 @@
+{
+	"Print to postNoToken": {
+		"prefix": "mlHttp.postNoToken",
+		"body": [
+			"//不依赖口令接口调用方法",
+			"mlHttp.postNoToken('ptframework.do?act=${1:access}',",
+			"\t{",
+			"\t\t${2:key}:${3:value}",
+			"\t},",
+			"\tfunction(${4:successData}){",
+			"\t\t$5",
+			"\t});"
+		],
+		"description": "调用mlHttp.postNoToken"
+	},
+	"Print to postToken": {
+		"prefix": "mlHttp.postToken",
+		"body": [
+			"//依赖Token口令接口调用方法",
+			"mlHttp.postToken('ptframework.do?act=${1:login}',",
+			"\t{",
+			"\t\t${2:key}:${3:value}",
+			"\t},",
+			"\tfunction(${4:successData}){",
+			"\t\t$5",
+			"\t});"
+		],
+		"description": "调用mlHttp.postToken"
+	},
+	"Print to postAuthToken": {
+		"prefix": "mlHttp.postAuthToken",
+		"body": [
+			"//依赖Token、AuthToken口令接口调用方法",
+			"mlHttp.postAuthToken('ptframework.do?act=${1:apply}',",
+			"\t{",
+			"\t\t${2:key}:${3:value}",
+			"\t},",
+			"\tfunction(${4:successData}){",
+			"\t\t$5",
+			"\t});"
+		],
+		"description": "调用mlHttp.postAuthToken"
+	},
+	"Print to ptHttp": {
+		"prefix": "ptHttp.post",
+		"body": [
+			"ptHttp.post(${1:action},${2:param},${3:success});"
+		],
+		"description": "调用ptHttp.post"
+	}
+}
